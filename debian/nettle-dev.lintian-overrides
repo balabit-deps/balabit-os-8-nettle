@@ -1,0 +1,1 @@
+nettle-dev: pkg-config-references-unknown-shared-library usr/lib/x86_64-linux-gnu/pkgconfig/hogweed.pc -lgmp (line 16)
