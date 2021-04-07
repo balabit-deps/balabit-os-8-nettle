@@ -1,3 +1,23 @@
+nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Out of Bound memory access in signature verification
+    - debian/patches/CVE-2021-20305-1.patch: new functions
+      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in
+      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,
+      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.
+    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for
+      point comparison in eddsa-verify.c.
+    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in
+      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.
+    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is
+      canonically reduced in ecc-ecdsa-sign.c.
+    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in
+      eddsa-hash.c.
+    - debian/libhogweed5.symbols: added new symbols.
+    - CVE-2021-20305
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400
+
 nettle (3.5.1+really3.5.1-2) unstable; urgency=low
 
   * Upload to unstable.

@@ -22,8 +22,10 @@ libhogweed.so.5 libhogweed5 #MINVER#
  _nettle_ecc_mod_inv@HOGWEED_INTERNAL_5_0 0
  _nettle_ecc_mod_mul@HOGWEED_INTERNAL_5_0 0
  _nettle_ecc_mod_mul_1@HOGWEED_INTERNAL_5_0 0
+ _nettle_ecc_mod_mul_canonical@HOGWEED_INTERNAL_5_0 3.5.1+really3.5.1-2ubuntu0.1
  _nettle_ecc_mod_random@HOGWEED_INTERNAL_5_0 0
  _nettle_ecc_mod_sqr@HOGWEED_INTERNAL_5_0 0
+ _nettle_ecc_mod_sqr_canonical@HOGWEED_INTERNAL_5_0 3.5.1+really3.5.1-2ubuntu0.1
  _nettle_ecc_mod_sub@HOGWEED_INTERNAL_5_0 0
  _nettle_ecc_mod_submul_1@HOGWEED_INTERNAL_5_0 0
  _nettle_ecc_mul_a@HOGWEED_INTERNAL_5_0 0
