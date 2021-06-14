@@ -1,3 +1,16 @@
+nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium
+
+  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext
+    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr
+      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,
+      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.
+    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt
+      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,
+      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.
+    - CVE-2021-3580
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400
+
 nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: Out of Bound memory access in signature verification
